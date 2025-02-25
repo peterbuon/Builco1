@@ -1,0 +1,15 @@
+model AIModelComparison {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  prompt    String?
+  gpt35     String?
+  claude21  String?
+  geminiFree String?
+  llama2    String?
+  mistral7B String?
+  grok1     String?
+  consensus String?
+  status    Json?
+  rateLimit Json?
+}
